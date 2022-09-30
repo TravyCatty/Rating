@@ -1,1 +1,25 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+#primary-clr {
+  color: #fb7413;
+}
+
+#light-grey {
+  color: #959eac;
+}
+
+#medium-grey {
+  color: #7c8798;
+}
+
+#dark-blue {
+  color: #252d37;
+}
+
+#very-dark-blue {
+  color: #121417;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}/*# sourceMappingURL=style.css.map */
