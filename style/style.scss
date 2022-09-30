@@ -13,9 +13,59 @@ body {
     font-size: 15px;
     font-family: "Overpass", sans-serif;
     background-color: $very-dark-blue;
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
-main{
-    width: 375px;
-    height: 375px;
-    background-color: $dark-blue;
+main {
+    background: radial-gradient(at top, $dark-blue, $very-dark-blue 800px);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+    gap: 1.5rem;
+    color: #fff;
+    img {
+        max-width: 20px;
+        background: $dark-blue;
+        padding: 1rem;
+        border-radius: 50%;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1rem;
+        color: $light-grey;
+        line-height: 1.5;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 3.8rem;
+            padding: 1.2rem 0rem;
+            text-align: center;
+            background: $dark-blue;
+            color: $light-grey;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+    }
+    button {
+        font-family: "Overpass", sans-serif;
+
+        font-size: 1rem;
+        text-transform: uppercase;
+        background: $primary-clr;
+        letter-spacing: 2px;
+        color: #fff;
+        border: none;
+        border-radius: 100px;
+        padding: 1rem;
+        font-weight: bold;
+    }
 }
