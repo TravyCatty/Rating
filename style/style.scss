@@ -18,7 +18,7 @@ body {
     height: 100vh;
 }
 main {
-    background: radial-gradient(at top, $dark-blue, $very-dark-blue 800px);
+    background: radial-gradient(at top, $dark-blue, $very-dark-blue 500px);
     border-radius: 20px;
     padding: 2rem;
     display: flex;
@@ -27,6 +27,8 @@ main {
     max-width: 400px;
     gap: 1.5rem;
     color: #fff;
+    transition: 0.15s;
+
     img {
         max-width: 20px;
         background: $dark-blue;
@@ -46,13 +48,22 @@ main {
         display: flex;
         justify-content: space-between;
         li {
-            width: 3.8rem;
-            padding: 1.2rem 0rem;
-            text-align: center;
+            min-width: 60px;
+            min-height: 60px;
+            display: grid;
+            place-items: center;
             background: $dark-blue;
             color: $light-grey;
             border-radius: 50%;
             font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.15s;
+
+            &:hover {
+                background: $medium-grey;
+                color: #fff;
+            }
         }
     }
     button {
@@ -67,5 +78,38 @@ main {
         border-radius: 100px;
         padding: 1rem;
         font-weight: bold;
+        cursor: pointer;
+        transition: 0.15s;
+        &:hover {
+            background: #fff;
+            color: $primary-clr;
+        }
+    }
+}
+@media (max-width: 500px) {
+    body {
+        padding: 20px 2%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    main {
+        max-width: 315px;
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        ul {
+            li {
+                min-width: 50px;
+                min-height: 50px;
+                font-size: 1rem;
+            }
+        }
+        button {
+            font-size: 1rem;
+        }
     }
 }

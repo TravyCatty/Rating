@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  background: radial-gradient(at top, #252d37, #121417 800px);
+  background: radial-gradient(at top, #252d37, #121417 500px);
   border-radius: 20px;
   padding: 2rem;
   display: flex;
@@ -18,6 +18,7 @@ main {
   max-width: 400px;
   gap: 1.5rem;
   color: #fff;
+  transition: 0.15s;
 }
 main img {
   max-width: 20px;
@@ -39,13 +40,21 @@ main ul {
   justify-content: space-between;
 }
 main ul li {
-  width: 3.8rem;
-  padding: 1.2rem 0rem;
-  text-align: center;
+  min-width: 60px;
+  min-height: 60px;
+  display: grid;
+  place-items: center;
   background: #252d37;
   color: #959eac;
   border-radius: 50%;
   font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s;
+}
+main ul li:hover {
+  background: #7c8798;
+  color: #fff;
 }
 main button {
   font-family: "Overpass", sans-serif;
@@ -58,4 +67,36 @@ main button {
   border-radius: 100px;
   padding: 1rem;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s;
+}
+main button:hover {
+  background: #fff;
+  color: #fb7413;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 20px 2%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  main {
+    max-width: 315px;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  main p {
+    font-size: 1rem;
+  }
+  main ul li {
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 1rem;
+  }
+  main button {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
