@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.none {
+  display: none;
+}
+
 body {
   font-size: 15px;
   font-family: "Overpass", sans-serif;

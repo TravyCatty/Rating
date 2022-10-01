@@ -8,7 +8,13 @@ $medium-grey: #7c8798;
 $dark-blue: #252d37;
 
 $very-dark-blue: #121417;
-
+.none{
+    display: none;
+}
+.active {
+    background: $primary-clr;
+    color: $fff;
+}
 body {
     font-size: 15px;
     font-family: "Overpass", sans-serif;
@@ -44,6 +50,7 @@ main {
         color: $light-grey;
         line-height: 1.5;
     }
+    
     ul {
         display: flex;
         justify-content: space-between;
@@ -64,6 +71,7 @@ main {
                 background: $medium-grey;
                 color: #fff;
             }
+            
         }
     }
     button {
@@ -86,6 +94,7 @@ main {
         }
     }
 }
+
 @media (max-width: 500px) {
     body {
         padding: 20px 2%;
