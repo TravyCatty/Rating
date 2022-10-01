@@ -8,12 +8,17 @@ $medium-grey: #7c8798;
 $dark-blue: #252d37;
 
 $very-dark-blue: #121417;
-.none{
+.none {
     display: none;
 }
-.active {
+.primary {
     background: $primary-clr;
-    color: $fff;
+    color: #fff;
+    &:hover {
+        background: $primary-clr;
+
+        color: #fff;
+    }
 }
 body {
     font-size: 15px;
@@ -50,7 +55,7 @@ main {
         color: $light-grey;
         line-height: 1.5;
     }
-    
+
     ul {
         display: flex;
         justify-content: space-between;
@@ -71,7 +76,6 @@ main {
                 background: $medium-grey;
                 color: #fff;
             }
-            
         }
     }
     button {
@@ -97,7 +101,7 @@ main {
 
 @media (max-width: 500px) {
     body {
-        padding: 20px 2%;
+        padding: 20px 4%;
         display: flex;
         justify-content: center;
         align-items: start;
@@ -107,18 +111,17 @@ main {
         h1 {
             font-size: 2rem;
         }
-        p {
-            font-size: 1rem;
-        }
         ul {
             li {
-                min-width: 50px;
-                min-height: 50px;
+                min-width: 40px;
+                min-height: 40px;
                 font-size: 1rem;
             }
         }
         button {
             font-size: 1rem;
+        padding: .8rem;
+
         }
     }
 }

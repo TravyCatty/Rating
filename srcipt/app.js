@@ -1,6 +1,7 @@
-let li = document.querySelector("LI")
+let ul = document.querySelector("ul")
+let li = document.querySelector("li")
 let btn = document.querySelector('button')
-li.onclick = () => {
-    li.classList.toggle('active')
-    console.log(li);
+
+ul.onclick = (e) => {
+    e.target.classList.toggle('primary')
 }

@@ -3,6 +3,15 @@
   display: none;
 }
 
+.primary {
+  background: #fb7413;
+  color: #fff;
+}
+.primary:hover {
+  background: #fb7413;
+  color: #fff;
+}
+
 body {
   font-size: 15px;
   font-family: "Overpass", sans-serif;
@@ -81,7 +90,7 @@ main button:hover {
 
 @media (max-width: 500px) {
   body {
-    padding: 20px 2%;
+    padding: 20px 4%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -92,15 +101,13 @@ main button:hover {
   main h1 {
     font-size: 2rem;
   }
-  main p {
-    font-size: 1rem;
-  }
   main ul li {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 40px;
+    min-height: 40px;
     font-size: 1rem;
   }
   main button {
     font-size: 1rem;
+    padding: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
